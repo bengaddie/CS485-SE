@@ -1,0 +1,45 @@
+#table-field{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 50px;
+	padding-top: 20px;
+	height: 470px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F7F7F7;
+	border-radius: 5px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.title-span{
+
+	font-size: 25px;
+	color: #5CB85C;
+	margin-bottom: 20px;
+}
+
+hr {
+	width: 70%;
+	margin-top: 4.9px;
+	margin-bottom: 5px;
+	display: block; 
+	height: 1px;
+  border: 0; 
+  border-top: 1px solid #4A8CF6;
+}
+
+input{
+	width: 75%;
+	height: 40px;
+	padding: 5px;
+	font-size: 14px;
+}
+
+#button{
+	height: 35px;
+	width: 75%;
+	border-radius: 5px;
+	text-shadow: 0 1px rgba(0,0,0,0.3);
+}

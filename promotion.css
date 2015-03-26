@@ -1,0 +1,36 @@
+.main-div{
+	text-align: center;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-top: 30px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F7F7F7;
+	border-radius: 5px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.button-div{
+	float: right;
+	padding-right: 240px;
+	padding-top: 50px;
+}
+
+.back-btn{
+	border-radius: 8px;
+	background-color: #5CB85C;
+	color: white;
+	height: 30px;
+	width: 100px;
+}
+
+.back-btn:hover{
+	box-shadow: 0 0 10px #5CB85C;
+	background-color: white;
+	color: #5CB85C;
+	border-color: #5CB85C;
+}

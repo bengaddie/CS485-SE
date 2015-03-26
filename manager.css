@@ -1,0 +1,37 @@
+.boldener{
+	font-weight: bold;
+}
+.box{
+	border-radius: 15px;
+	margin:1em; 
+	width: 200px; 
+	height: 200px; 
+	font-size: 25px;
+	background-color: #474CCC;
+	color: white;
+}
+
+.box:hover{
+	box-shadow: 0 0 10px #474CCC;
+	background-color: white;
+	color: #474CCC;
+	border-color: #474CCC;
+}
+
+.stat-box{
+	font-size: 10px;
+	border-radius: 8px;
+	margin:1em; 
+	width: 200px; 
+	height: 40px; 
+	font-size: 25px;
+	background-color: #5CB85C;
+	color: white;
+}
+
+.stat-box:hover{
+	box-shadow: 0 0 10px #5CB85C;
+	background-color: white;
+	color: #5CB85C;
+	border-color: #5CB85C;
+}

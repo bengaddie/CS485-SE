@@ -1,0 +1,45 @@
+.main-div{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 50px;
+	padding-top: 1px;
+	padding-bottom: 20px;
+	height: auto;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F7F7F7;
+	border-radius: 5px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+hr {
+	width: 70%;
+	margin-top: 4.9px;
+	margin-bottom: 5px;
+	display: block; 
+	height: 1px;
+  border: 0; 
+  border-top: 1px solid #333333;
+}
+
+.go-back{
+	float: right;
+	padding-right: 240px;
+	padding-top: 70px;
+}
+
+.back-btn{
+	border-radius: 8px;
+	background-color: #5CB85C;
+	color: white;
+	height: 35px;
+}
+
+.back-btn:hover{
+	box-shadow: 0 0 10px #5CB85C;
+	background-color: white;
+	color: #5CB85C;
+	border-color: #5CB85C;
+}
