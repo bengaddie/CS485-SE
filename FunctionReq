@@ -1,0 +1,17 @@
+3.2.1. State 1 (Home Page)
+3.2.1.1. Home page loads where the user has the options of either logging in, registering or browsing the items.
+3.2.2. Browse Items
+3.2.2.1. If the user has not registered they may still browse items and add them to their cart. If user has registered they may also add items to their cart. 
+3.2.2.2. The browse items page will display the items name, quantity in stock, price as   well as an image of the item. 
+3.2.3. Shopping Cart 
+3.2.3.1 The items the user wishes to purchase will be stored here. The total price will be displayed here along with the option to purchase the items.
+3.2.4. Register 
+3.2.4.1 User can register to become a customer and purchase items. User enters basic information and chooses a username (email) and password. 
+3.2.5. View Orders
+3.2.5.1 Register customers can view their order history here. They can see the status of their items either pending or shipped.
+3.2.5.2 Staff and managers can see the orders of all customers and can change the status from “pending” to “shipped”.  
+3.2.6. View Inventory
+3.2.6.1 Only staff and managers may view the inventory, where they can see the price and amount of each item that is left they may restock an item increasing its quantity. 
+3.2.6.2 Staff and managers may also add items to the store, the simply fill in the information such as name quantity and price. 
+3.2.7. View Stats
+3.2.7.1 Only the manager can view the sales stats. The amount of each items sold, the total number of items sold as well as the total revenue. 
