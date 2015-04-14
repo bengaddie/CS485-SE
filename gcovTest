@@ -37,6 +37,11 @@
 
 ./grep [[:alnum:]] grep.c                       #41.92%
 
+./grep -B 15 \W grep.c                          #41.98%
+
+./grep -C ab \w grep.c                          #42.04%
+
+./grep [.[:digit:]$] grep.c                     #42.15%
 
 
 gcov -b grep.c
