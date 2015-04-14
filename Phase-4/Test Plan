@@ -1,0 +1,182 @@
+1. Introduction
+This document specifies the plan for testing the Online Toy and Game Store system. Testing will be requirements­based, and the following sections will refer to the specific requirements in the System Requirements Specification (SRS) as they are enumerated in that document. Section 2 describes the testing requirements, which are derived directly from the SRS. Section 3 presents the set of test cases that should be used to adequately cover the testing requirements. Instructions for execution of the test cases are also included.
+2. Testing Requirements
+2.1. State 1 (Home Page)
+2.1.1 SRS 3.2.1.1. 
+View the home page as a registered and unregistered user, 
+2.2. Browse Items
+2.2.1 SRS 3.2.2.1. 
+Try adding items to cart as an unregistered and registered user to verify that unregistered user can browse items and add them to their cart. If user has registered they may also add items to their cart. 
+2.2.2 SRS 3.2.2.2. 
+Visit the browse items page to verify that the page will display the items name, quantity in stock, price as well as an image of the item. 
+2.3. Shopping Cart 
+2.3.1 SRS 3.2.3.1 
+Add item to cart, then check and see if the items in the cart are correct; also verify that the information about the items displayed is correct.
+2.4. Register 
+2.4.1 SRS 3.2.4.1 
+Check the registration page to see that user can register to become a customer and purchase items. Check input form and try inputting different things into the form. Also check that when the submit button is clicked it will work correctly.
+2.5. View Orders
+2.5.1 SRS 3.2.5.1 
+Visit page as a registered customer and view the order history. Verify that the ordered are correct. Verify that the status of the items is correct.
+2.5.2 SRS 3.2.5.2
+Visit the view orders page as a staff or managers and check if we can see the orders of all customers and can change the status from “pending” to “shipped”.  
+2.6 View Inventory 
+2.6.1 SRS 3.2.6.1 
+Visit this page as a staff and managers and also try visiting as another type of user, only staff and manager should be able to visit this page. Try changing price and amount of each item.
+2.6.2 SRS 3.2.6.2 
+Visit as a staff and managers and try adding items to the store. 
+2.7. View Stats
+2.7.1 SRS 3.2.7.1 
+Visit this page as a manager, and try visiting as other account type, only the manager can view the sales stats. Verify the correctness of the amount of each items sold, the total number of items sold as well as the total revenue. 
+2.8 Security
+	2.8.1 SRS 3.4.1 
+		Attempt to log in with an existing username and an incorrect password.
+	2.8.2 SRS 3.4.2
+Attempt to log in with a correct existing username and password pair.
+	2.8.3 SRS 3.4.3
+ Log in as a manager and change a consumer password or other datas.
+2.9 Database 
+	2.9.1 SRS 3.5.1
+The database requirements are adequately covered by the rest of the testing requirements.	
+2.9.2 SRS 3.5.2 
+Query the database using the customer ID and check to see if the results returned for each consumer are correct.
+	2.9.3 SRS 3.5.3.1
+Try adding new user to the database. In additions, attempts adding with incorrect or bad entries to the database.
+2.9.4 SRS 3.5.3.2.1 
+Query the database to verify the record of customer’s purchases and check if the results are correct
+	2.9.5 SRS 3.5.3.2.2 
+Query the database as a Staff and Managers to verify the order history and all the items purchased.    
+2.9.6 SRS 3.5.3.3
+	Query the database for the inventory information and verify the returned results.
+2.9.7 SRS 3.5.3.3.1 
+Attempt to add or remove items. Also, attempt to edit the prices or promotional sales.
+	2.9.8 SRS 3.5.3.4.1 
+Query the View Stats function to verify the order history and inventory. Check that the results returned are correct.
+	2.9.9. SRS 3.5.4.1 
+As a customer, attempt to select items from the Store Inventory to place in the Item Cart to Purchase.
+	2.9.10 SRS 3.5.4.2.2
+As a Staff, attempt to Edit, Add, or Remove items in the Store Inventory.
+	2.9.10 SRS 3.5.4.2.3 
+As a staff, attempt to select items from the Store Inventory to place in their Item Cart to Purchase.
+2.9.11 SRS 3.5.4.3.2 
+As a manager, attempt to Edit, Add, or Remove items in the Store Inventory.
+	2.9.12 SRS 3.5.4.3.3
+As a manager, attempt to select items from the Store Inventory to place in their Item Cart to Purchase.
+3. Test Cases
+The following test cases make up the Online Toy and Game Store system test suite. The server setup and the database setup must be performed before executing each test. The “Inputs and Expected Outputs” tables describe the actions that should be taken for each test and the results that should be observed for the system to pass each test. Note that the phrase “every page” refers only to the most important pages (usually the home page, browse item page, and view cart page). Each test also states which of the testing requirements from section 2 are covered by the test.
+To run the tests, first execute we must start the server. Make sure the project is being hosted on a server and navigate to the home page to access the site.
+3.1 Home Page
+3.1.1 Test 1
+Purpose:
+Test the presence of home page when a person is not logged in and logged in.
+Setup:
+Verify that at least one user account is set up correctly, so we can logged in.
+Inputs and Expected Outputs
+User Type	Home Page Correct	Log In Available	Registration Available
+Not Logged In	true	true	true
+Logged In	true	false	false
+Testing Requirements Covered
+Testing Requirement 2.1.1
+
+3.2 Browse Items
+3.2.1 Test 2
+Purpose:
+To check and verify that the browse item page is displayed correctly, and both the logged in and not logged in user can view this page.
+Setup:
+Verify that there are some selling items available so that when browsing items we can see some items. 
+Inputs and Expected Outputs
+User Type	Browse Page Correct	Images, Names, Quantity Correct	Add to Cart Available
+Not Logged In	true	true	true
+Logged In	true	true	true
+Testing Requirements Covered
+Testing Requirement 2.2.1, 2.2.2
+
+3.3 Shopping Cart
+3.2.1 Test 3
+Purpose:
+To check and verify that the cart functionality is working correctly and items can be added and stored in the cart. 
+Setup:
+Verify that there are some selling items available so item can be added to cart. 
+Inputs and Expected Outputs
+Input	Output
+Click added item to cart	Item Should be added to cart
+Click view cart	The added items to cart should be display with correct quantity.
+Testing Requirements Covered
+Testing Requirement 2.3.1
+
+3.4 Register
+3.2.1 Test 4
+Purpose:
+To check and verify that the user registration page can inform user if the input information is bad. And verify that the registration is successful if all the entered information are correct and conform to the rules.
+Setup:
+Navigate to the registration page
+Inputs and Expected Outputs
+Input Fields	Output
+bad email	No user created
+used email	No user created
+unmatched password confirmation	No user created
+bad characters in Names fields	No user created
+All fields correct	user created
+Testing Requirements Covered
+Testing Requirement 2.4.1
+
+3.5 View Orders
+3.2.1 Test 5
+Purpose:
+To check and verify that after the user can view the submitted order and its status. And staff or manager can change the status of orders.
+Setup:
+Make sure that the logged in user already submitted some orders, to verify the staff or manager permission make sure to log in as a staff or managers.
+Inputs and Expected Outputs
+User type	Past Orders Display Correctly	See Submitted Orders Status	View All Submitted Orders	Change Orders Status
+unregistered/not logged in	false	false	false	false
+logged in 	true	true	false	false
+staff	true	true	true	true
+manager	true	true	true	true
+Testing Requirements Covered
+Testing Requirement 2.5.1, 2.5.2
+
+3.6 View Orders
+3.2.1 Test 6
+Purpose:
+To check and verify that the view inventory pages are displayed correctly, and staff or managers are able to modify the inventory.
+Setup:
+Make sure to log in as a staff or managers before attempting to modify the inventory.
+Inputs and Expected Outputs
+Actions	Results
+add items to inventory	item are added to the store
+delete items from inventory 	item deleted from the store
+change item price	price of item changed
+change item amount	amount of item changed
+Testing Requirements Covered
+Testing Requirement 2.6.1, 2.6.2
+
+3.7 View Stats
+3.2.1 Test 7
+Purpose:
+To check and verify that the view stats page are displayed correctly. And only manager can see this page.
+Setup:
+Make sure to log in as a manager before attempting to view the stats.
+Inputs and Expected Outputs
+User Type	Stats Available	Stats Correct
+Not Logged In	false	NA
+Logged In Customer 	false	NA
+Staff	false	NA
+Manager	true	true
+Testing Requirements Covered
+Testing Requirement 2.7.1
+
+3.8 Security
+3.2.1 Test 8
+Purpose:
+To check and verify the security of the system, user with correct authorization information should be granted the correct access. Verify that the log in can be used correctly.
+Setup:
+Accounts are set up correctly according to its type.
+Inputs and Expected Outputs
+Input Information	Results
+Incorrect password	log in unsuccessful
+Not existing username 	log in unsuccessful
+Correct username and password	log in successful
+Manager attempt change user information	user info changes
+Testing Requirements Covered
+Testing Requirement 2.8.1, 2.8.2, 2.8.3
+
