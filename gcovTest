@@ -1,0 +1,42 @@
+#/bin/bash
+
+#Bradley Thomas,  Benjamin Gaddie, Daniel Lertsirikarn
+
+                                        #Branches Executed Total:
+./grep                                          #0.29%
+
+./grep "FETCH" grep.c                           #17.83%
+
+./grep 67 grep.c                                #17.89%
+
+./grep "" grep.c                                #22.10%
+
+./grep -iw "is" grep.c                          #34.37%
+
+./grep -B 2 "FETCH" grep.c                      #34.95%
+
+./grep -C 4 "FETCH" grep.c                      #35.36%
+
+./grep -v "FETCH" grep.c                        #35.66%
+
+./grep -c "FETCH" grep.c                        #35.71%
+
+./grep -x define grep.c                         #36.01%
+
+./grep fine* grep.c                             #37.35%
+
+./grep fine+ grep.c                             #37.53%
+
+./grep reg? grep.c                              #37.65%
+
+./grep define{3} grep.c                         #37.88%
+
+./grep [FETCHdefine] grep.c                     #39.46%
+
+./grep [^FETCH0123456789define] grep.c          #39.52%
+
+./grep [[:alnum:]] grep.c                       #41.92%
+
+
+
+gcov -b grep.c
