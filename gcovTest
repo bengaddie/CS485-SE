@@ -59,4 +59,14 @@
 
 ./grep -G define grep.c                         #47.86%
 
+./grep -AB 2 -CEFGchilnqsvwx -ef define grep.c  #47.92%
+
+./grep -AB 2 -CEchilnqsvwx -ef define grep.c    #48.16%
+
+./grep -B 2 -CEchilnsvwx -e define grep.c       #48.39%
+
+./grep -A 2 -CFchilnsvwxe define grep.c         #48.51%
+
+./grep -B 2000 -Gchinsvlwxe define grep.c       #48.62%
+
 gcov -b grep.c
