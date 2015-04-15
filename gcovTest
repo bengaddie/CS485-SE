@@ -53,4 +53,10 @@
 
 ./grep -n "FETCH" grep.c                        #43.62%
 
+./grep -E [.[:alnum:].] grep.c                  #43.91%
+
+./grep -f grep.c abcd grep.c                    #47.80%
+
+./grep -G define grep.c                         #47.86%
+
 gcov -b grep.c
