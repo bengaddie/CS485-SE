@@ -1,8 +1,6 @@
 <?php
 
-        $username = "btga224";
-        $password = "u0705355";
-        $dbname = "test";
+        
         $server = "mastelottoplan.backups.uky.edu";//"mysql.cs.uky.edu";
         // Connecting to the SQL server at cs.uky.edu.
         $conn = mysqli_connect( $server, $username, $password, $dbname);
